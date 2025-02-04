@@ -1,11 +1,10 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { BrowserRouter } from "react-router-dom"; // Wrap the component in BrowserRouter for routing
-import PokemonDetails from "../pages/pokemonDetails"; // Adjust path as necessary
+import { BrowserRouter } from "react-router-dom";
+import PokemonDetails from "../pages/pokemonDetails";
 import { useGetPokemonByIdQuery } from "../containers/pokemonReducers/reducerSlice";
 
-// Mock the useGetPokemonByIdQuery hook
 jest.mock("../containers/pokemonReducers/reducerSlice");
 
 const mockUseGetPokemonByIdQuery = useGetPokemonByIdQuery as jest.Mock;
@@ -64,7 +63,6 @@ describe("PokemonDetails Component", () => {
       </BrowserRouter>
     );
 
-    // Ensure the name is rendered correctly
     expect(screen.getByText("Pikachu")).toBeInTheDocument();
     expect(screen.getByAltText("Pikachu")).toBeInTheDocument();
     expect(screen.getByText("Height: 4")).toBeInTheDocument();

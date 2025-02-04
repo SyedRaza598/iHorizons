@@ -4,6 +4,8 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Below are the usefull commands to run and test the app
 
+# To install the dependies run : yarn
+
 # To start the app in DEV mode run : yarn dev
 
 # To run the test cases for the screens run : yarn test

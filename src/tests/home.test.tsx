@@ -1,12 +1,11 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { BrowserRouter } from "react-router-dom"; // Import BrowserRouter
+import { BrowserRouter } from "react-router-dom";
 import Home from "../pages/home";
 import { useGetAllPokemonsQuery } from "../containers/pokemonReducers/reducerSlice";
 import { iPokemonCard } from "../types/app";
 
-// Mock the useGetAllPokemonsQuery hook
 jest.mock("../containers/pokemonReducers/reducerSlice");
 
 const mockUseGetAllPokemonsQuery = useGetAllPokemonsQuery as jest.Mock;
@@ -30,8 +29,6 @@ describe("Home Component", () => {
 
     render(
       <BrowserRouter>
-        {" "}
-        {/* Wrap the component in BrowserRouter */}
         <Home />
       </BrowserRouter>
     );
@@ -47,8 +44,6 @@ describe("Home Component", () => {
 
     render(
       <BrowserRouter>
-        {" "}
-        {/* Wrap the component in BrowserRouter */}
         <Home />
       </BrowserRouter>
     );
@@ -64,8 +59,6 @@ describe("Home Component", () => {
 
     render(
       <BrowserRouter>
-        {" "}
-        {/* Wrap the component in BrowserRouter */}
         <Home />
       </BrowserRouter>
     );
@@ -85,8 +78,6 @@ describe("Home Component", () => {
 
     render(
       <BrowserRouter>
-        {" "}
-        {/* Wrap the component in BrowserRouter */}
         <Home />
       </BrowserRouter>
     );
