@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "esnext", // or "node16"
+    "target": "esnext", // you can adjust this depending on your target
+    "jsx": "react",
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}

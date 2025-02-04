@@ -1,0 +1,75 @@
+.banner {
+  text-align: center;
+  padding: 1px 20px;
+  background-color: #4b54fd;
+  text-transform: capitalize;
+}
+
+.cardsContainer {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pokemonCard {
+  padding: 20px;
+  width: 100px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.deetailCardContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.pokemonDetailCard {
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+
+.pokemonDetailCard > p {
+  font-weight: 700;
+  border-top: 1px solid rgb(214, 211, 211);
+}
+
+.pokemonDetailCard p span {
+  font-weight: 500;
+}
+
+.pokemonDetailCard img {
+  width: 100px;
+}
+
+.types {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgb(214, 211, 211);
+}
+
+.types p {
+  font-weight: 700;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1px;
+  margin-left: 2px;
+}
+
+.tags span {
+  padding: 1px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid rgb(37, 35, 35);
+  background-color: rgb(247, 226, 72);
+  line-height: 1;
+  text-transform: uppercase;
+}
