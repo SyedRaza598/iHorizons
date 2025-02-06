@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { store } from "./store";
 import Home from "./pages/home";
 import PokemonDetails from "./pages/pokemonDetails";
-import "./assets/css/app.css";
+import "./assets/css/App.css";
 
 function App() {
   return (
